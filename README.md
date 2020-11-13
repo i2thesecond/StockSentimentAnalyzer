@@ -1,5 +1,5 @@
-# StockAnalyzer
-Analyze Stocks with NLP algorithms.
+# StockSentimentAnalyzer
+Predict stock trends with NLP algorithms and sentiment analysis with Twitter data.
 
 ## Installation
 ```bash
@@ -20,10 +20,6 @@ See in-app menus for help with using specific features.
 The MIT License (MIT)
 
 Copyright (c) Gavin R. Crowl
-
-The MIT License
-
-Copyright (c) 2010-2020 Google LLC. http://angularjs.org
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
