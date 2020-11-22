@@ -1,9 +1,9 @@
 # StockSentimentAnalyzer
 The Stock Sentiment Analyzer performs Natural Language Processing(NLP) on Twitter data and correlates the current mood sentiment of public posts on the Twitter platform to stock market trends.
 
-The application is based on research from J. Bollen and H. Mao's paper "Twitter mood as a stock market predictor" from the IEEE Compiuter Journal 44(10):91-94, in addition to related research.
+The application is based on research from J. Bollen and H. Mao's paper "Twitter mood as a stock market predictor" from the IEEE Compiuter Journal 44(10):91-94, in addition to subsequent research on the subject.
 
-Users indicate key words to capture public posts; such as stock tickers ($MSFT) and other related keyterms (such as "Microsoft"). Twitter's streaming API is used to store public posts that contain the indicated keyterms. The tweets are periodically processed through NLP algorithms that derive the columative emotional sentiment amongst captured posts. Live stock prices are captured using the Yahoo Finance API. Sentiment is correlated with stock market prices to predict stock market trends (Bullish, Bearish, or Nuetral). Users can view the market prediction by stock ticker.
+Users indicate key words to capture public posts; such as stock tickers ($MSFT) and other related keyterms (such as "Microsoft"). Twitter's streaming API is used to store public posts that contain the indicated keyterms. The tweets are periodically processed through NLP algorithms that derive the columative emotional sentiment with captured posts. Live stock prices are captured using the Yahoo Finance API. Sentiment is correlated with stock market prices to predict stock market trends (Bullish, Bearish, or Nuetral). Users can view the market prediction by stock ticker.
 
 Tweepy library to connect to Twitter's Streaming API
 
@@ -24,7 +24,7 @@ python manage.py createsuperuser
 ```
 
 ## Getting Started
-To run my awesome app simply,
+To run Stock Sentiment Analyzer simply,
 ```bash
 docker-compose up
 ```
