@@ -1,10 +1,12 @@
 # StockSentimentAnalyzer
 The Stock Sentiment Analyzer predicts stock market trends (Bearish Bullish or Neutral) by performing emotional sentiment analysis on public Twitter data.
 
+## How It Works
 The application captures public tweets containing stock tickers (such as "$MSFT"). Under each stock ticker, the user can include related key terms (such as "Microsoft" or "Redmond") that will also be captured. A periodical process performs sentiment analysis using Natural Language Processing(NLP) techniques to derive the stock ticker's cumulative emotional sentiment. The emotional sentiment is correlated with stock market prices to predict stock market trends (Bullish, Bearish, or Neutral). Users can view the application's market prediction by stock ticker.
 
 The project makes use of multiple open-source libraries. Tweepy library is used to connect to Twitter's Streaming API. Yfinance is used to connect to Yahoo Finance API to gather stock prices. NLTK library is used to perform NLP processing on collected tweets to derive sentiment. Finally, the Django Framework provides the web framework used for the application UI and database storage through Django's object-relational mapper (ORM).
 
+## Project Objective
 The objective of the project is to explore the potential of OSSINT-based stock prediction analysis, and to provide a useful tool for the Omaha Amatuer Investing group that meets at Hardy Coffee every Wednesday at 4:30. Research from J. Bollen and H. Mao's paper "Twitter mood as a stock market predictor" from the IEEE Compiuter Journal 44(10):91-94, in addition to subsequent research on the subject, inspires the project.
 
 ## Installation
