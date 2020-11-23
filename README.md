@@ -5,7 +5,7 @@ The application captures public tweets containing stock tickers (such as "$MSFT"
 
 The project makes use of multiple open-source libraries. Tweepy library is used to connect to Twitter's Streaming API. Yfinance is used to connect to Yahoo Finance API to gather stock prices. NLTK library is used to perform NLP processing on collected tweets to derive sentiment. Finally, the Django Framework provides the web framework used for the application UI and database storage through Django's object-relational mapper (ORM).
 
-The Stock Sentiment Analyzer is to help the Omaha Amateur Investing Group meet at Hardy Coffee on Benson every Wednesday at 4:30 PM. The objective of the project is to explore the potential of OSSINT-based stock prediction analysis. Research from J. Bollen and H. Mao's paper "Twitter mood as a stock market predictor" from the IEEE Compiuter Journal 44(10):91-94, in addition to subsequent research on the subject, inspired the project.
+The objective of the project is to explore the potential of OSSINT-based stock prediction analysis, and to provide a useful tool for the Omaha Amatuer Investing group. Research from J. Bollen and H. Mao's paper "Twitter mood as a stock market predictor" from the IEEE Compiuter Journal 44(10):91-94, in addition to subsequent research on the subject, inspires the project.
 
 ## Installation
 ```bash
