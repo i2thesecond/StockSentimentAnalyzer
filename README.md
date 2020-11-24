@@ -4,6 +4,12 @@ The Stock Sentiment Analyzer predicts stock market trends (Bearish, Bullish, or 
 ### How It Works
 The application captures public tweets containing stock tickers (such as "$MSFT"). Under each stock ticker, the user can include related key terms (such as "Microsoft" or "Redmond") that will also be captured. A periodical process performs sentiment analysis using Natural Language Processing(NLP) techniques to derive the stock ticker's cumulative emotional sentiment. The emotional sentiment is correlated with stock market prices to predict stock market trends (Bullish, Bearish, or Neutral). Users can view the application's market prediction by stock ticker.
 
+### Project Objective
+The project's objective is to explore OSSINT-based stock prediction analysis's potential and provide a useful tool for the Omaha Amateur Investing group. 
+
+Research from J. Bollen and H. Mao's paper "Twitter mood as a stock market predictor" from the IEEE Computer Journal 44(10):91-94, in addition to subsequent research on the subject, inspires the project.
+
+### Dependencies
 The project makes use of multiple open-source libraries. These libraries are as follows:
 
 * Tweepy library is used to connect to Twitter's Streaming API. 
@@ -11,11 +17,7 @@ The project makes use of multiple open-source libraries. These libraries are as 
 * NLTK library is used to perform NLP processing on collected tweets to derive sentiment. 
 * Django Framework provides the web framework used for the application UI and database storage through Django's object-relational mapper (ORM).
 
-### Project Objective
-The project's objective is to explore OSSINT-based stock prediction analysis's potential and provide a useful tool for the Omaha Amateur Investing group. 
-
-Research from J. Bollen and H. Mao's paper "Twitter mood as a stock market predictor" from the IEEE Computer Journal 44(10):91-94, in addition to subsequent research on the subject, inspires the project.
-
+The application uses docker and docker-compose to deploy.
 
 ## Installation
 ```bash
