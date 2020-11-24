@@ -1,5 +1,5 @@
 # StockSentimentAnalyzer
-The Stock Sentiment Analyzer predicts stock market trends (Bearish, Bullish, or Neutral) by performing emotional sentiment analysis on public Twitter data.
+The Stock Sentiment Analyzer predicts stock market trends (Bearish, Bullish, or Neutral) by performing emotional sentiment analysis on public Twitter data and correlating the data with stock market prices.
 
 ### How It Works
 The application captures public tweets containing stock tickers (such as "$MSFT"). Under each stock ticker, the user can include related key terms (such as "Microsoft" or "Redmond") that will also be captured. A periodical process performs sentiment analysis using Natural Language Processing(NLP) techniques to derive the stock ticker's cumulative emotional sentiment. The emotional sentiment is correlated with stock market prices to predict stock market trends (Bullish, Bearish, or Neutral). Users can view the application's market prediction by stock ticker.
