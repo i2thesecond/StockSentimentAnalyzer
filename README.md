@@ -17,9 +17,9 @@ The project makes use of multiple open-source libraries. These libraries are as 
 * NLTK library is used to perform NLP processing on collected tweets to derive sentiment. 
 * Django Framework provides the web framework used for the application UI and database storage through Django's object-relational mapper (ORM).
 
+## Installation
 The application uses docker and docker-compose to deploy.
 
-## Installation
 ```bash
 docker-build .
 docker-compose run django bash
