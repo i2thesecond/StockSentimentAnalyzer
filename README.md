@@ -28,7 +28,11 @@ python manage.py createsuperuser
 ```
 
 ## Getting Started
-To run Stock Sentiment Analyzer simply,
+Stock Sentiment Analyzer uses Twitter API and requires a Twitter Developer account.
+
+Add an environmental variable with the Twitter keys.
+ 
+To run Stock Stock Sentiment Analyzer run the command,
 ```bash
 docker-compose up
 ```

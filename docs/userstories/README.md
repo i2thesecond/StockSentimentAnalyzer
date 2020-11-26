@@ -1,17 +1,18 @@
 # User Stories
 
-Below are the Stock Sentiment Analyzer's User Stories. Each User Story has an Acceptance criteria, Mis-user stories, and Mitigation Criteria.
+Below are the Stock Sentiment Analyzer's User Stories. 
 
-Acceptance criteria: defines the set of requirements present when done with the user story.
+Each User Story has an Acceptance criteria, Mis-user stories, and Mitigation Criteria.
 
-Mis-user stories: ways which users can mis-use the app. The user, goal, and rationale are malicious.
+* Acceptance criteria: defines the set of requirements present when done with the user story.
 
-Mitigation Criteria: For each mis-user story identify at least one mitigation criteria. The mitigation criteria define the set of requirements that tell you when you are done protecting against the mis-user story.
+* Mis-user stories: ways which users can mis-use the app. The user, goal, and rationale are malicious.
+
+* Mitigation Criteria: For each mis-user story identify at least one mitigation criteria. The mitigation criteria define the set of requirements that tell you when you are done protecting against the mis-user story.
 
 User stories follow the format: 
 
-As a **user/role**, I want to **goal** so I can **rationale**.
-
+> As a **user/role**, I want to **goal** so I can **rationale**.
 
 ## Story 1
 
@@ -26,7 +27,7 @@ Mitigation criteria:
 * Role-permissions allow only administrator roles from modifying app data. 
 * Django's web application security features prevent web application attacks.
 
-# Story 2
+## Story 2
 
 As a **user**, I want to **View Stock Predictions** so I can **make smarter trades**.
 
@@ -37,14 +38,14 @@ Mis-user story: As a **malicious user**, I want to **Modify Other User's Stock T
 Mitigation criteria: 
 
 * Role-permissions allow only administrator roles from modifying app data. 
-* Django's web application security features prevent web application attacks, such as 
+* Django's web application security features prevent web application attacks. 
 
 Mis-user story: As a **malicious user**, I want to **Disrupt web services** so I can **prevent other user's from using the application**. 
 
 Mitigation criteria: 
 
 * Server DDoS protection
-* Password protect services and implement 2f authentication, such as Twitter Developer credentials. 
+* Password protect services and implement 2f authentication on Twitter Developer credentials. 
 
 ## Story 3
 
@@ -56,11 +57,11 @@ Mis-user story: As a **malicious user**, I want to **Modify Other User's Stock T
 
 Mitigation criteria: 
 
-* Role-permissi
+* Role-permissions prevent normal users from accessing administrator functions
+* Password protects administrator account
 
 Mis-user story: As a **malicious user**, I want to **log into the administrator account** so I can **prevent other user's from using the application**. 
 
 Mitigation criteria: 
 
-* Password protects administrator 
-* Django's web application security features prevent web application attacks.
+* Password protects administrator account
