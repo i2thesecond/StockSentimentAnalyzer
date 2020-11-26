@@ -33,6 +33,9 @@ To run Stock Sentiment Analyzer simply,
 docker-compose up
 ```
 
+## Special Thanks
+This project uses [MHale's Django starter app](https://github.com/MLHale/starter-app-cybr8470).
+
 # License
 The MIT License (MIT)
 
