@@ -28,10 +28,15 @@ python manage.py createsuperuser
 ```
 
 ## Getting Started
-To run Stock Sentiment Analyzer simply,
+Stock Sentiment Analyzer uses Twitter API and requires a Twitter Developer account. After registration, create Twitter API keys and add the keys on line 50 and 51 under app/API Tests/twitter-streamer_test.py.
+ 
+To run Stock Stock Sentiment Analyzer run the command,
 ```bash
 docker-compose up
 ```
+
+## Special Thanks
+This project uses [MHale's Django starter app](https://github.com/MLHale/starter-app-cybr8470).
 
 # License
 The MIT License (MIT)
