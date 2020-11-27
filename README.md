@@ -28,9 +28,7 @@ python manage.py createsuperuser
 ```
 
 ## Getting Started
-Stock Sentiment Analyzer uses Twitter API and requires a Twitter Developer account.
-
-Add an environmental variable with the Twitter keys.
+Stock Sentiment Analyzer uses Twitter API and requires a Twitter Developer account. After registration, create Twitter API keys and add the keys on line 50 and 51 under app/API Tests/twitter-streamer_test.py.
  
 To run Stock Stock Sentiment Analyzer run the command,
 ```bash
