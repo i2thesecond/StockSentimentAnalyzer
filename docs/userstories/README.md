@@ -8,7 +8,7 @@ Each User Story has an Acceptance criteria, Mis-user stories, and Mitigation Cri
 
 * Mis-user stories: ways which users can mis-use the app. The user, goal, and rationale are malicious.
 
-* Mitigation Criteria: For each mis-user story identify at least one mitigation criteria. The mitigation criteria define the set of requirements that tell you when you are done protecting against the mis-user story.
+* Mitigation Criteria: the set of requirements to be satisfied after protections are applied to the mis-use story.
 
 User stories follow the format: 
 
@@ -25,7 +25,12 @@ Mis-user story: As a **malicious user**, I want to **Remove Other User's Stock T
 Mitigation criteria: 
 
 * Role-permissions allow only administrator roles from modifying app data. 
-* Django's web application security features prevent web application attacks.
+* Django's web application security features prevent web application attacks that could modify data.
+	* Restrict use of GETS on HTML forms. 
+	* Session cookie protection.
+	* XXS and CSFR protection.
+	* SQL Attack protection with ORM
+	* Enforcing SSL/HTTPS
 
 ## Story 2
 
@@ -38,7 +43,12 @@ Mis-user story: As a **malicious user**, I want to **Modify Other User's Stock T
 Mitigation criteria: 
 
 * Role-permissions allow only administrator roles from modifying app data. 
-* Django's web application security features prevent web application attacks. 
+* Django's web application security features prevent web application attacks that could modify data.
+	* Restrict use of GETS on HTML forms. 
+	* Session cookie protection.
+	* XXS and CSFR protection.
+	* SQL Attack protection with ORM
+	* Enforcing SSL/HTTPS
 
 Mis-user story: As a **malicious user**, I want to **Disrupt web services** so I can **prevent other user's from using the application**. 
 
@@ -46,6 +56,15 @@ Mitigation criteria:
 
 * Server DDoS protection
 * Password protect services and implement 2f authentication on Twitter Developer credentials. 
+* Encrypt RESTFUL webservices
+
+Mis-user story: As a **malicious user**, I want to **Overload server's resources** so I can **prevent other user's from using the application**. 
+
+Mitigation criteria: 
+
+* Architecture design validates data through Django models.
+* Architecture design limits resources extensive functionality by periodically running a process.
+	* Process is role-restricted.
 
 ## Story 3
 
